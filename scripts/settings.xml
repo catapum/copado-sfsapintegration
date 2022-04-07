@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd" xmlns="http://maven.apache.org/SETTINGS/1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <servers>
+        <server>
+            <id>snapshots</id>
+            <username>anmolk@copado.com</username>
+            <password>g^IIgM3RXFxhT@*36yR6MyU5mp^eME</password>
+        </server>
+        <server>
+            <id>MuleRepository</id>
+            <username>$enterprise_username</username>
+            <password>$enterprise_password</password>
+        </server>
+    </servers>
+    <profiles>
+        <profile>
+            <repositories>
+                <repository>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <id>central</id>
+                    <name>mule-poc</name>
+                    <url>https://copado.jfrog.io/artifactory/mule-poc</url>
+                </repository>
+                <repository>
+                    <snapshots />
+                    <id>snapshots</id>
+                    <name>mule-poc</name>
+                    <url>https://copado.jfrog.io/artifactory/mule-poc</url>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <id>central</id>
+                    <name>mule-poc</name>
+                    <url>https://copado.jfrog.io/artifactory/mule-poc</url>
+                </pluginRepository>
+                <pluginRepository>
+                    <snapshots />
+                    <id>snapshots</id>
+                    <name>mule-poc</name>
+                    <url>https://copado.jfrog.io/artifactory/mule-poc</url>
+                </pluginRepository>
+            </pluginRepositories>
+            <id>artifactory</id>
+        </profile>
+    </profiles>
+    <activeProfiles>
+        <activeProfile>artifactory</activeProfile>
+    </activeProfiles>
+</settings>
