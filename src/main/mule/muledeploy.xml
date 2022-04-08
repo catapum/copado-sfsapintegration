@@ -9,6 +9,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="muledeployFlowQAtests" doc:id="568ac966-5000-4a58-a7ec-3004b974d4d0" >
 		<http:listener doc:name="Listener" doc:id="a0b1356c-e147-45ed-9448-240ab53bb3e9" config-ref="HTTP_Listener_config" path="/helloworld"/>
-		<set-payload value="works with Jfrog version 5.0.4 115" doc:name="Set Payload" doc:id="251008b0-935f-4b89-9cf5-36805acca836" />
+		<set-payload value="works with Jfrog version 5.0.4 116" doc:name="Set Payload" doc:id="251008b0-935f-4b89-9cf5-36805acca836" />
 	</flow>
 </mule>
